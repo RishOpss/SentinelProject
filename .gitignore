@@ -1,10 +1,138 @@
-# Python-generated files
+# ---------- Python-generated files ----------
 __pycache__/
-*.py[oc]
+*.py[cod]
+*$py.class
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
 
-# Virtual environments
-.venv
+# ---------- Virtual environments ----------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- Secrets and credentials ----------
+.env
+.env.*
+!.env.example
+!.env.sample
+*.env
+secrets/
+secret*.json
+secret*.yaml
+secret*.yml
+credentials*
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+*.gpg
+.htpasswd
+.netrc
+.pypirc
+
+# Cloud / AWS (PayVista: nothing may leave its AWS account)
+.aws/
+aws-credentials*
+*.tfvars
+*.tfvars.json
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Tokens / service accounts
+*token*.json
+*.token
+service-account*.json
+kubeconfig*
+.kube/
+
+# ---------- Data (confidential: PCI DSS / DPDP Act) ----------
+data/
+datasets/
+*.parquet
+*.csv
+*.tsv
+*.jsonl
+*.arrow
+*.feather
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.sql.gz
+
+# ---------- Model weights and ML artifacts (must stay in PayVista's registry) ----------
+models/
+checkpoints/
+artifacts/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.gguf
+*.awq
+*.h5
+*.pkl
+*.pickle
+*.joblib
+mlruns/
+mlartifacts/
+wandb/
+lightning_logs/
+runs/
+tensorboard/
+outputs/
+
+# ---------- Notebooks ----------
+.ipynb_checkpoints/
+# Notebook outputs can embed data; strip before committing, or uncomment:
+# *.ipynb
+
+# ---------- Logs ----------
+*.log
+logs/
+
+# ---------- Testing / tooling caches ----------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# ---------- IDE / OS ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---------- Client documents ----------
+# The CRD is marked "Confidential, for project use only".
+# Uncomment if this repo will be pushed to a public or third-party remote.
+# *.docx
+# Project_SENTINEL_Client_Requirement_Document.docx
