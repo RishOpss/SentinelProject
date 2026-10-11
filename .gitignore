@@ -133,6 +133,5 @@ Thumbs.db
 
 # ---------- Client documents ----------
 # The CRD is marked "Confidential, for project use only".
-# Uncomment if this repo will be pushed to a public or third-party remote.
-# *.docx
-# Project_SENTINEL_Client_Requirement_Document.docx
+Project_SENTINEL_Client_Requirement_Document.docx
+*.docx
